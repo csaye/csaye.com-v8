@@ -31,6 +31,7 @@ export default function Projects() {
         html,
         body {
           background-color: #fff;
+          color: #000;
         }
       `}</style>
     </div>
