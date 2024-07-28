@@ -60,6 +60,7 @@ const satoshi = localFont({
 
 export const metadata: Metadata = {
   title: 'Cooper Saye',
+  description: 'I’m passionate about startups and full-stack development.',
 }
 
 export default function RootLayout({
