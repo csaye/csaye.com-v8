@@ -26,6 +26,13 @@ export default function Projects() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        html,
+        body {
+          background-color: #fff;
+        }
+      `}</style>
     </div>
   )
 }

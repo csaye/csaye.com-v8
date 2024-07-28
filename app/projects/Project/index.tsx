@@ -29,7 +29,7 @@ export function Project({ project }: Props) {
           <Image
             src={`/projects/${image}`}
             placeholder='blur'
-            blurDataURL={`/img/projects/${image}`}
+            blurDataURL={`/projects/${image}`}
             style={{ objectFit: 'cover', maxWidth: '100%' }}
             width='360'
             height='220'
