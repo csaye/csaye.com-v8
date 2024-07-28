@@ -1,0 +1,38 @@
+.container {
+  padding: 8rem 2rem;
+
+  p {
+    margin: 16px 0;
+    line-height: 24px;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--light);
+  }
+
+  > .content {
+    max-width: 40rem;
+    margin: 0 auto;
+
+    > header {
+      display: flex;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 36px;
+      }
+
+      .subtitle {
+        margin: 4px 0 8px 0;
+        font-style: italic;
+      }
+
+      > .links {
+        display: flex;
+        align-items: flex-start;
+        gap: 6px;
+      }
+    }
+  }
+}
