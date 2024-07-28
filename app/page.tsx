@@ -39,13 +39,14 @@ export default function Home() {
           </DomLink>{' '}
           in America. I’m also a venture partner at{' '}
           <DomLink href='https://www.contrary.com/'>Contrary</DomLink>, the
-          investment firm that backs the bold.
+          investment firm that backs the bold. I’m passionate about startups and
+          full-stack development.
         </p>
 
         <p>
           I attend the University of Michigan in Ann Arbor, studying computer
           science and mathematics. I’m originally from Los Angeles, CA but spend
-          most of my time in New York, NY and Ann Arbor, MI.
+          most of my time in New York City and Ann Arbor.
         </p>
 
         <p>
