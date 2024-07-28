@@ -26,6 +26,10 @@ p {
 
 a {
   color: inherit;
+
+  &:hover {
+    text-decoration-style: dashed;
+  }
 }
 
 .wipe {
