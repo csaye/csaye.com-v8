@@ -1,3 +1,4 @@
+'use client'
 import { DomIconLink } from '@/components/DomIconLink'
 import styles from './page.module.scss'
 import { DomLink } from '@/components/DomLink'
