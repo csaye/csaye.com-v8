@@ -61,7 +61,7 @@ export default function Home() {
   )
 
   function getDay() {
-    const start = new Date(2023, 4, 15)
+    const start = new Date('2023-05-15T00:00:00-04:00')
     const ms = Date.now() - start.getTime()
     return Math.floor(ms / 1000 / 60 / 60 / 24)
   }
