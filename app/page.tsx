@@ -1,4 +1,5 @@
-'use client'
+export const revalidate = 0
+
 import { DomIconLink } from '@/components/DomIconLink'
 import styles from './page.module.scss'
 import { DomLink } from '@/components/DomLink'
