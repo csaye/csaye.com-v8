@@ -39,16 +39,16 @@ export default function Home() {
           <DomLink href='https://ramp.com/bill-pay'>
             bill payment platform
           </DomLink>{' '}
-          in America. I’m also a venture partner at{' '}
+          in America. I’m also chief of staff at{' '}
           <DomLink href='https://www.contrary.com/'>Contrary</DomLink>, the
           investment firm that backs the bold. I’m passionate about startups and
           full-stack development.
         </p>
 
         <p>
-          I attend the University of Michigan in Ann Arbor, studying computer
-          science and mathematics. I’m originally from Los Angeles, CA but spend
-          most of my time in New York City and Ann Arbor.
+          I attend the University of Michigan, studying computer science and
+          mathematics. I’m originally from Los Angeles but spend most of my time
+          in New York City and Ann Arbor.
         </p>
 
         <p>
