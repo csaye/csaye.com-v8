@@ -47,8 +47,8 @@ export default function Home() {
 
         <p>
           I attend the University of Michigan, studying computer science and
-          mathematics. I’m originally from Los Angeles but spend most of my time
-          in New York City and Ann Arbor.
+          mathematics (currently on leave). I spend most of my time in New York
+          City.
         </p>
 
         <p>
