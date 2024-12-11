@@ -1,14 +1,7 @@
 import { PageLayout } from '@/components/PageLayout'
-import { Writing } from '../writings'
+import { onWriting } from '../writings'
 import { writingToDateString } from '../utils'
 import { IconLink } from '@/components/IconLink'
-
-export const onWriting: Writing = {
-  title: 'On Writing',
-  path: 'on-writing',
-  month: 12,
-  year: 2024,
-}
 
 export default function OnWriting() {
   return (
@@ -34,7 +27,7 @@ export default function OnWriting() {
 
           <p>
             Sometimes getting started is the hardest part. Well, this piece is
-            me getting started. Hopefully it’s just the beginning.
+            me getting started.
           </p>
         </>
       }
