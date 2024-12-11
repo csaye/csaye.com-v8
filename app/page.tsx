@@ -1,9 +1,9 @@
 export const revalidate = 0
 
-import { DomIconLink } from '@/components/DomIconLink'
-import styles from './page.module.scss'
-import { DomLink } from '@/components/DomLink'
+import { IconLinkExternal } from '@/components/IconLink'
+import { LinkExternal } from '@/components/LinkExternal'
 import Link from 'next/link'
+import { PageLayout } from '@/components/PageLayout'
 
 const GITHUB_URL = 'https://github.com/csaye'
 const LINKEDIN_URL = 'https://www.linkedin.com/in/coopersaye/'
@@ -11,54 +11,54 @@ const TWITTER_URL = 'https://twitter.com/cooperjsaye'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <header>
-          <div>
-            <h1>Cooper Saye</h1>
+    <PageLayout
+      title='Cooper Saye'
+      subtitle={
+        <>
+          Day {getDay().toLocaleString()} at{' '}
+          <LinkExternal href='https://ramp.com/'>Ramp</LinkExternal>
+        </>
+      }
+      icons={
+        <>
+          <IconLinkExternal icon='github' href={GITHUB_URL} />
 
-            <p className={styles.subtitle}>
-              Day {getDay().toLocaleString()} at{' '}
-              <DomLink href='https://ramp.com/'>Ramp</DomLink>
-            </p>
-          </div>
+          <IconLinkExternal icon='linkedin' href={LINKEDIN_URL} />
 
-          <div className={styles.links}>
-            <DomIconLink icon='github' href={GITHUB_URL} />
+          <IconLinkExternal icon='twitter' href={TWITTER_URL} />
+        </>
+      }
+      content={
+        <>
+          <p>
+            I’m a software engineer at Ramp building the fastest-growing{' '}
+            <LinkExternal href='https://ramp.com/bill-pay'>
+              bill payment platform
+            </LinkExternal>{' '}
+            in America. I’m also chief of staff at{' '}
+            <LinkExternal href='https://www.contrary.com/'>
+              Contrary
+            </LinkExternal>
+            , the investment firm that backs the bold. I’m passionate about
+            startups and full-stack development.
+          </p>
 
-            <DomIconLink icon='linkedin' href={LINKEDIN_URL} />
+          <p>
+            I attend the University of Michigan, studying computer science and
+            mathematics (currently on leave). I spend most of my time in New
+            York City.
+          </p>
 
-            <DomIconLink icon='twitter' href={TWITTER_URL} />
-          </div>
-        </header>
-
-        <hr />
-
-        <p>
-          I’m a software engineer at Ramp building the fastest-growing{' '}
-          <DomLink href='https://ramp.com/bill-pay'>
-            bill payment platform
-          </DomLink>{' '}
-          in America. I’m also chief of staff at{' '}
-          <DomLink href='https://www.contrary.com/'>Contrary</DomLink>, the
-          investment firm that backs the bold. I’m passionate about startups and
-          full-stack development.
-        </p>
-
-        <p>
-          I attend the University of Michigan, studying computer science and
-          mathematics (currently on leave). I spend most of my time in New York
-          City.
-        </p>
-
-        <p>
-          <Link href='/projects'>View my projects</Link> or follow me on{' '}
-          <DomLink href={GITHUB_URL}>GitHub</DomLink>,{' '}
-          <DomLink href={LINKEDIN_URL}>LinkedIn</DomLink>, and{' '}
-          <DomLink href={TWITTER_URL}>Twitter</DomLink>.
-        </p>
-      </div>
-    </div>
+          <p>
+            View my <Link href='/projects'>projects</Link> and{' '}
+            <Link href='/writing'>writings</Link> or follow me on{' '}
+            <LinkExternal href={GITHUB_URL}>GitHub</LinkExternal>,{' '}
+            <LinkExternal href={LINKEDIN_URL}>LinkedIn</LinkExternal>, and{' '}
+            <LinkExternal href={TWITTER_URL}>Twitter</LinkExternal>.
+          </p>
+        </>
+      }
+    />
   )
 
   function getDay() {

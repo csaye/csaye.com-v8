@@ -5,21 +5,17 @@
     padding: 4rem 2rem;
   }
 
-  p {
-    margin: 16px 0;
+  p,
+  ul,
+  li {
     line-height: 26px;
   }
 
-  hr {
-    border: 0;
-    border-top: 1px solid var(--light);
-  }
-
-  > .content {
+  > .page {
     max-width: 40rem;
     margin: 0 auto;
 
-    > header {
+    > .header {
       display: flex;
       justify-content: space-between;
 
@@ -38,7 +34,7 @@
         font-weight: 500;
       }
 
-      > .links {
+      > .icons {
         display: flex;
         align-items: flex-start;
         gap: 6px;
@@ -46,6 +42,17 @@
         @media (max-width: 767.98px) {
           margin: 4px 0 10px 0;
         }
+      }
+    }
+
+    > hr {
+      border: 0;
+      border-top: 1px solid var(--light);
+    }
+
+    > .content {
+      > p {
+        margin: 16px 0;
       }
     }
   }
